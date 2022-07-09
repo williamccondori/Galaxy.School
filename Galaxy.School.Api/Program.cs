@@ -1,8 +1,21 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    var serializerSettings = new JsonSerializerSettings()
+    {
+        Formatting = Formatting.Indented,
+        ContractResolver = new DefaultContractResolver()
+    };
+
+    //options.OutputFormatters.Add(new Newtonsoft.JsonFormatter())
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

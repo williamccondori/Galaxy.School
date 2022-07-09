@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Galaxy.School.Infrastructure.EntityFramework.Configurations
 {
-    public class EvaluationConfiguration : IEntityTypeConfiguration<Evaluation>
+    public partial class EvaluationConfiguration : IEntityTypeConfiguration<Evaluation>
     {
         public void Configure(EntityTypeBuilder<Evaluation> builder)
         {
@@ -33,6 +33,10 @@ namespace Galaxy.School.Infrastructure.EntityFramework.Configurations
 
             builder.Property(p => p.DateUpdated)
                 .HasColumnName("DATE_UPDATED");
+
+            OnConfigurePartial(builder);
         }
+
+        partial void OnConfigurePartial(EntityTypeBuilder<Evaluation> builder);
     }
 }

@@ -1,0 +1,13 @@
+version: '3.4'
+
+ 
+services:
+  galaxy.school.sql-server-2019:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: galaxy-school-sql-server-2019
+    ports:
+      - 1434:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=1234      
+

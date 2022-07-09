@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.School.Api", "Galaxy
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Galaxy.School.Web", "Galaxy.School.Web\Galaxy.School.Web.esproj", "{8704DB9E-A043-4EFD-98E6-EA7D5BCA3D88}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{40B19ED7-4637-447D-8054-EF6BD1C34316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{8704DB9E-A043-4EFD-98E6-EA7D5BCA3D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8704DB9E-A043-4EFD-98E6-EA7D5BCA3D88}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8704DB9E-A043-4EFD-98E6-EA7D5BCA3D88}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{40B19ED7-4637-447D-8054-EF6BD1C34316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B19ED7-4637-447D-8054-EF6BD1C34316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B19ED7-4637-447D-8054-EF6BD1C34316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B19ED7-4637-447D-8054-EF6BD1C34316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
